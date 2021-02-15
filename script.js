@@ -59,7 +59,7 @@ verificaHora(hora, sunrise, sunset);
 
 function verificaHora(hora, sunrise, sunset) {
     const listaJanela = document.querySelectorAll('.janela');
-    // hora = 10; 
+
     if(hora > sunrise[0] && hora < (+sunset[0] + 12)) {
         listaJanela.forEach(janela => {
             janela.classList.add('apaga');
